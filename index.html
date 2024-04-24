@@ -1,14 +1,580 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body>
-    <h1 class="text-3xl  text-white font-bold underline bg-red-500">
-        Hello world!
-      </h1>
-</body>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="stylesheet" href="./src/Utility.css" />
+    <link rel="stylesheet" href="./src/mediaQuery.css" />
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== AOS  ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo brand"
+          ><h1>Shurmans</h1>
+          <h1>Bedrijfswagens</h1></a
+        >
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">Gallery</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <!--========== HEADER ==========-->
+
+    <!--========== HERO ==========-->
+    <div class="w-full h-full hero">
+      <img
+        src="./assets/imagies/heroVan2.jpg"
+        alt="A old van"
+        class="w-full h-full lg:h-[800px] object-fill"
+      />
+    </div>
+    <!--========== HERO ==========-->
+
+    <!--========== Gallery ON LARGE SCREEN ==========-->
+    <section class="w-full h-full mt-4 hidden lg:block" id="gallery">
+
+      <!--========== Gallery TITLE ==========-->
+      <div class="gallery text-center mt-2">
+        <h1 class="font-extrabold text-4xl">Gallery</h1>
+      </div>
+
+      <!--========== Gallery IMAGIES ==========-->
+
+  <!--========== ON LARGE SCREEN ==========-->
+
+      <!-- Slider main first container -->
+      <div class="first-gallery  w-full h-full ">
+         <!-- Cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 p-20 gap-3">
+
+          <!-- Card one -->
+          <div class="w-full h-100 rounded shadow-md border border-slate-200">
+            <!-- Card img -->
+            <div class="Card-img">
+              <img src="./assets/imagies/img2.jpg" alt="" style="width: 100%;"  class="object-fill h-full"/>
+            </div>
+
+            <!-- Card Body -->
+            <div class="Card-Body">
+              <!-- Card title -->
+              <div class="Card-title"></div>
+
+              <!-- Card text -->
+              <div class="Card-text"></div>
+            </div>
+          </div>
+          <!-- Card one  -->
+
+
+            <!-- Card two -->
+            <div class="w-full h-full rounded shadow-md border border-slate-200">
+                <!-- Card img -->
+                <div class="Card-img">
+                  <img src="./assets/imagies/img4.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+                </div>
+    
+                <!-- Card Body -->
+                <div class="Card-Body">
+                  <!-- Card title -->
+                  <div class="Card-title"></div>
+    
+                  <!-- Card text -->
+                  <div class="Card-text"></div>
+                </div>
+              </div>
+              <!-- Card two  -->
+
+
+
+                <!-- Card three -->
+            <div class="w-full h-full rounded shadow-md border border-slate-200">
+                <!-- Card img -->
+                <div class="Card-img">
+                  <img src="./assets/imagies/img5.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+                </div>
+    
+                <!-- Card Body -->
+                <div class="Card-Body">
+                  <!-- Card title -->
+                  <div class="Card-title"></div>
+    
+                  <!-- Card text -->
+                  <div class="Card-text"></div>
+                </div>
+              </div>
+              <!-- Card two  -->
+
+
+                <!-- Card four -->
+            <div class="w-full h-full rounded shadow-md border border-slate-200">
+                <!-- Card img -->
+                <div class="Card-img">
+                  <img src="./assets/imagies/img6.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+                </div>
+    
+                <!-- Card Body -->
+                <div class="Card-Body">
+                  <!-- Card title -->
+                  <div class="Card-title"></div>
+    
+                  <!-- Card text -->
+                  <div class="Card-text"></div>
+                </div>
+              </div>
+              <!-- Card two  -->
+
+          
+        </div>
+        <!-- Cards -->
+
+
+
+        
+      </div>
+
+
+    <!-- Slider main second container -->
+      <div class="first-gallery w-full h-full ">
+         <!-- Cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 p-20 gap-3">
+
+          <!-- Card one -->
+          <div class="w-full h-100 rounded shadow-md border border-slate-200">
+            <!-- Card img -->
+            <div class="Card-img">
+              <img src="./assets/imagies/img2.jpg" alt="" style="width: 100%;"  class="object-fill h-full"/>
+            </div>
+
+            <!-- Card Body -->
+            <div class="Card-Body">
+              <!-- Card title -->
+              <div class="Card-title"></div>
+
+              <!-- Card text -->
+              <div class="Card-text"></div>
+            </div>
+          </div>
+          <!-- Card one  -->
+
+
+            <!-- Card two -->
+            <div class="w-full h-full rounded shadow-md border border-slate-200">
+                <!-- Card img -->
+                <div class="Card-img">
+                  <img src="./assets/imagies/img4.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+                </div>
+    
+                <!-- Card Body -->
+                <div class="Card-Body">
+                  <!-- Card title -->
+                  <div class="Card-title"></div>
+    
+                  <!-- Card text -->
+                  <div class="Card-text"></div>
+                </div>
+              </div>
+              <!-- Card two  -->
+
+
+
+                <!-- Card three -->
+            <div class="w-full h-full rounded shadow-md border border-slate-200">
+                <!-- Card img -->
+                <div class="Card-img">
+                  <img src="./assets/imagies/img5.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+                </div>
+    
+                <!-- Card Body -->
+                <div class="Card-Body">
+                  <!-- Card title -->
+                  <div class="Card-title"></div>
+    
+                  <!-- Card text -->
+                  <div class="Card-text"></div>
+                </div>
+              </div>
+              <!-- Card two  -->
+
+
+                <!-- Card four -->
+            <div class="w-full h-full rounded shadow-md border border-slate-200">
+                <!-- Card img -->
+                <div class="Card-img">
+                  <img src="./assets/imagies/img6.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+                </div>
+    
+                <!-- Card Body -->
+                <div class="Card-Body">
+                  <!-- Card title -->
+                  <div class="Card-title"></div>
+    
+                  <!-- Card text -->
+                  <div class="Card-text"></div>
+                </div>
+              </div>
+              <!-- Card two  -->
+
+          
+        </div>
+        <!-- Cards -->
+
+
+
+        
+      </div>
+
+
+
+       <!-- Slider main third container -->
+       <div class="first-gallery w-full h-full ">
+        <!-- Cards -->
+       <div class="grid grid-cols-2 lg:grid-cols-4 p-20 gap-3">
+
+         <!-- Card one -->
+         <div class="w-full h-100 rounded shadow-md border border-slate-200">
+           <!-- Card img -->
+           <div class="Card-img">
+             <img src="./assets/imagies/img2.jpg" alt="" style="width: 100%;"  class="object-fill h-full"/>
+           </div>
+
+           <!-- Card Body -->
+           <div class="Card-Body">
+             <!-- Card title -->
+             <div class="Card-title"></div>
+
+             <!-- Card text -->
+             <div class="Card-text"></div>
+           </div>
+         </div>
+         <!-- Card one  -->
+
+
+           <!-- Card two -->
+           <div class="w-full h-full rounded shadow-md border border-slate-200">
+               <!-- Card img -->
+               <div class="Card-img">
+                 <img src="./assets/imagies/img4.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+               </div>
+   
+               <!-- Card Body -->
+               <div class="Card-Body">
+                 <!-- Card title -->
+                 <div class="Card-title"></div>
+   
+                 <!-- Card text -->
+                 <div class="Card-text"></div>
+               </div>
+             </div>
+             <!-- Card two  -->
+
+
+
+               <!-- Card three -->
+           <div class="w-full h-full rounded shadow-md border border-slate-200">
+               <!-- Card img -->
+               <div class="Card-img">
+                 <img src="./assets/imagies/img5.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+               </div>
+   
+               <!-- Card Body -->
+               <div class="Card-Body">
+                 <!-- Card title -->
+                 <div class="Card-title"></div>
+   
+                 <!-- Card text -->
+                 <div class="Card-text"></div>
+               </div>
+             </div>
+             <!-- Card two  -->
+
+
+               <!-- Card four -->
+           <div class="w-full h-full rounded shadow-md border border-slate-200">
+               <!-- Card img -->
+               <div class="Card-img">
+                 <img src="./assets/imagies/img6.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+               </div>
+   
+               <!-- Card Body -->
+               <div class="Card-Body">
+                 <!-- Card title -->
+                 <div class="Card-title"></div>
+   
+                 <!-- Card text -->
+                 <div class="Card-text"></div>
+               </div>
+             </div>
+             <!-- Card two  -->
+
+         
+       </div>
+       <!-- Cards -->
+
+
+
+       
+     </div>
+
+
+       <!-- Slider main four container -->
+       <div class="first-gallery w-full h-full ">
+        <!-- Cards -->
+       <div class="grid grid-cols-2 lg:grid-cols-4 p-20 gap-3">
+
+         <!-- Card one -->
+         <div class="w-full h-100 rounded shadow-md border border-slate-200">
+           <!-- Card img -->
+           <div class="Card-img">
+             <img src="./assets/imagies/img2.jpg" alt="" style="width: 100%;"  class="object-fill h-full"/>
+           </div>
+
+           <!-- Card Body -->
+           <div class="Card-Body">
+             <!-- Card title -->
+             <div class="Card-title"></div>
+
+             <!-- Card text -->
+             <div class="Card-text"></div>
+           </div>
+         </div>
+         <!-- Card one  -->
+
+
+           <!-- Card two -->
+           <div class="w-full h-full rounded shadow-md border border-slate-200">
+               <!-- Card img -->
+               <div class="Card-img">
+                 <img src="./assets/imagies/img4.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+               </div>
+   
+               <!-- Card Body -->
+               <div class="Card-Body">
+                 <!-- Card title -->
+                 <div class="Card-title"></div>
+   
+                 <!-- Card text -->
+                 <div class="Card-text"></div>
+               </div>
+             </div>
+             <!-- Card two  -->
+
+
+
+               <!-- Card three -->
+           <div class="w-full h-full rounded shadow-md border border-slate-200">
+               <!-- Card img -->
+               <div class="Card-img">
+                 <img src="./assets/imagies/img5.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+               </div>
+   
+               <!-- Card Body -->
+               <div class="Card-Body">
+                 <!-- Card title -->
+                 <div class="Card-title"></div>
+   
+                 <!-- Card text -->
+                 <div class="Card-text"></div>
+               </div>
+             </div>
+             <!-- Card two  -->
+
+
+               <!-- Card four -->
+           <div class="w-full h-full rounded shadow-md border border-slate-200">
+               <!-- Card img -->
+               <div class="Card-img">
+                 <img src="./assets/imagies/img6.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+               </div>
+   
+               <!-- Card Body -->
+               <div class="Card-Body">
+                 <!-- Card title -->
+                 <div class="Card-title"></div>
+   
+                 <!-- Card text -->
+                 <div class="Card-text"></div>
+               </div>
+             </div>
+             <!-- Card two  -->
+
+         
+       </div>
+       <!-- Cards -->
+
+
+
+       
+     </div>
+
+
+     
+       <!-- Slider main five container -->
+       <div class="first-gallery w-full h-full ">
+        <!-- Cards -->
+       <div class="grid grid-cols-2 lg:grid-cols-4 p-20 gap-3">
+
+         <!-- Card one -->
+         <div class="w-full h-100 rounded shadow-md border border-slate-200">
+           <!-- Card img -->
+           <div class="Card-img">
+             <img src="./assets/imagies/img2.jpg" alt="" style="width: 100%;"  class="object-fill h-full"/>
+           </div>
+
+           <!-- Card Body -->
+           <div class="Card-Body">
+             <!-- Card title -->
+             <div class="Card-title"></div>
+
+             <!-- Card text -->
+             <div class="Card-text"></div>
+           </div>
+         </div>
+         <!-- Card one  -->
+
+
+           <!-- Card two -->
+           <div class="w-full h-full rounded shadow-md border border-slate-200">
+               <!-- Card img -->
+               <div class="Card-img">
+                 <img src="./assets/imagies/img4.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+               </div>
+   
+               <!-- Card Body -->
+               <div class="Card-Body">
+                 <!-- Card title -->
+                 <div class="Card-title"></div>
+   
+                 <!-- Card text -->
+                 <div class="Card-text"></div>
+               </div>
+             </div>
+             <!-- Card two  -->
+
+
+
+               <!-- Card three -->
+           <div class="w-full h-full rounded shadow-md border border-slate-200">
+               <!-- Card img -->
+               <div class="Card-img">
+                 <img src="./assets/imagies/img5.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+               </div>
+   
+               <!-- Card Body -->
+               <div class="Card-Body">
+                 <!-- Card title -->
+                 <div class="Card-title"></div>
+   
+                 <!-- Card text -->
+                 <div class="Card-text"></div>
+               </div>
+             </div>
+             <!-- Card two  -->
+
+
+               <!-- Card four -->
+           <div class="w-full h-full rounded shadow-md border border-slate-200">
+               <!-- Card img -->
+               <div class="Card-img">
+                 <img src="./assets/imagies/img6.jpg" alt="" style="width: 100%;" class="object-fill h-full"/>
+               </div>
+   
+               <!-- Card Body -->
+               <div class="Card-Body">
+                 <!-- Card title -->
+                 <div class="Card-title"></div>
+   
+                 <!-- Card text -->
+                 <div class="Card-text"></div>
+               </div>
+             </div>
+             <!-- Card two  -->
+
+         
+       </div>
+       <!-- Cards -->
+
+
+
+       
+     </div>
+    </section>
+
+
+   
+   
+   
+
+
+
+    <!--========== CUSTOM JS ==========-->
+    <script src="./js/index.js"></script>
+
+    <!--========== AOS ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "vertical",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
 </html>
