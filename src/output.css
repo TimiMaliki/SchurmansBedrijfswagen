@@ -734,6 +734,18 @@ video {
   height: 13rem;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1163,6 +1175,10 @@ video {
 
   .lg\:h-\[700px\] {
     height: 700px;
+  }
+
+  .lg\:h-0 {
+    height: 0px;
   }
 
   .lg\:w-4\/12 {
